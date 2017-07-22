@@ -17,10 +17,9 @@ public class BirthdayGuess {
     public static final int yesNum = 1766;	
     public static final int noNum  = 1765;	
     
-    
+    // Program Start - main
 	public static void main(String [] args) {
 		
-		// Variables 
 		Scanner scan = new Scanner(System.in);
 		Integer num = 0;
 		Integer newNum = 0;
