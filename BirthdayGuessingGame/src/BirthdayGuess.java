@@ -12,8 +12,7 @@ import java.util.concurrent.TimeUnit;
  *
  */
 public class BirthdayGuess {
-	
-	//Constants
+
     public static final int yesNum = 1766;	
     public static final int noNum  = 1765;	
     
