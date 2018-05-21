@@ -13,8 +13,8 @@ import java.util.concurrent.TimeUnit;
  */
 public class BirthdayGuess {
 
-    public static final int yesNum = 1766;	
-    public static final int noNum  = 1765;	
+    public static final int YES_NUM = 1766;	
+    public static final int NO_NUM  = 1765;	
     
     // Program Start - main
 	public static void main(String [] args) {
@@ -59,11 +59,11 @@ public class BirthdayGuess {
 		while(!bool) {
 			switch(scan.next()) {
 				case "Y":
-					newNumTwo = (newNum + yesNum) - yearBorn;
+					newNumTwo = (newNum + YES_NUM) - yearBorn;
 					bool = true;
 					break;
 				case "N":
-					newNumTwo = (newNum + noNum) - yearBorn;
+					newNumTwo = (newNum + NO_NUM) - yearBorn;
 					bool = true;
 					break;
 				default:
