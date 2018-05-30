@@ -1,3 +1,4 @@
+import java.util.Calendar;
 import java.util.Scanner;
 import java.util.Timer;
 import java.util.concurrent.TimeUnit;
@@ -5,16 +6,17 @@ import java.util.concurrent.TimeUnit;
 /**
  * A nice little game I learn from my sister via instagram.  Can predict one's age.
  * 
- * Not a very efficient implementation
+ * Not a very efficient implementation. And really, this game is just a numbers trick.
  * 
  * Took an hour and some change to complete.
- * @author Tim
+ * @author Tim Stelter
  *
  */
 public class BirthdayGuess {
 
-    public static final int YES_NUM = 1766;	
-    public static final int NO_NUM  = 1765;	
+	// These numbers need to be incremented +1 each year to give the correct birthday.
+    public static final int YES_NUM = Calendar.getInstance().get(Calendar.YEAR) - 249;	
+    public static final int NO_NUM  = Calendar.getInstance().get(Calendar.YEAR) - 251;	
     
     // Program Start - main
 	public static void main(String [] args) {
